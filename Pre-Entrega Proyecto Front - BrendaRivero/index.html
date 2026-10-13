@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Paginas | Reseñas de Libros</title>
+    <!-- Conexion con el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="Inicio">
+
+        <h1>Entre Paginas</h1>
+
+        <p>Un espacio para descubrir nuevas historias.</p>
+
+        <!-- Menu de Navegacion -->
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Presentacion -->
+        <section id="presentacion">
+
+            <h2>Bienvenidos a Entre Páginas</h2> 
+
+            <p> Este es un pequeño rincón dedicado a los libros, las historias y las emociones que nos despiertan. Descubrí nuevas lecturas y encontrá tu próxima aventura.</p>
+        
+        </section>
+
+        <!-- Reseñas de Libros -->
+        <section id="resenas">
+            <h2>Reseñas destacadas</h2>
+
+            <article>
+                <img src="img/orgullo-y-prejuicio.jpg" width="200" height="300" alt="Portada del libro Orgullo y prejuicio">
+
+                <h3>Orgullo y prejuicio</h3>
+
+                <p><strong>Autora:</strong> Jane Austen</p>
+
+                <p> Una historia sobre el amor, los prejuicios sociales y las primeras impresiones.</p>
+                
+                <p><strong>Mi valoración:</strong> 5/5 ⭐</p>
+            </article>
+
+            <article>
+                <img src="img/el-principito.jpg" width="200" height="300" alt="Portada del libro El principito">
+                
+                <h3>El Principito</h3>
+                
+                <p><strong>Autor:</strong> Antoine de Saint-Exupéry</p>
+                
+                <p>Un relato que invita a reflexionar sobre la amistad, los vínculos y la forma de ver el mundo.</p>
+                
+                <p><strong>Mi valoración:</strong> 5/5 ⭐</p>
+            </article>
+
+            <article>
+                <img src="img/harry-potter.jpg" width="200" height="300" alt="Portada de un libro de Harry Potter">
+                
+                <h3>Harry Potter y la Piedra Filosofal</h3>
+                
+                <p><strong>Autora:</strong> J. K. Rowling</p>
+                
+                <p>El comienzo de una aventura mágica que nos introduce en un mundo lleno de misterios.</p>
+                
+                <p><strong>Mi valoración:</strong> 5/5 ⭐</p>
+            </article>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto">
+
+            <h2>Contactanos</h2> 
+
+            <p> ¿Querés recomendar un libro o compartir tu opinión? ¡Escribime! </p>
+
+            <form action="https://formspree.io/f/xzedalnj" method="POST">
+
+                <label for="nombre">Nombre:</label> 
+                <input type="text" id="nombre" name="nombre" required> 
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required> 
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea> 
+                
+                <button type="submit">Enviar mensaje</button> 
+            
+            </form>
+
+        </section>
+
+    </main>
+    
+    <!-- Pie de Pagina -->
+    <footer>
+        <p>Entre Paginas | Un libro, miles de historias.</p>
+        <p>Proyecto educativo de HTML y CSS.</p>
+    </footer>
+
+</body>
+</html>

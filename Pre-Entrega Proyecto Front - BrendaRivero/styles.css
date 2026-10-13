@@ -1,0 +1,178 @@
+/* ESTILOS GENERALES */ 
+
+* { 
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; 
+    background-color: #F8F4EC; 
+    color: #352D2A; 
+    font-family: "Lato", sans-serif; 
+    line-height: 1.6;
+}
+
+h1, h2, h3 { 
+    font-family: "Playfair Display", serif;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: linear-gradient(135deg, #346348, #057f40);
+    color: #FFFFFF; 
+    text-align: center; 
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px; 
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* NAVEGACION */
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 25px;
+
+    display: flex; 
+    justify-content: center; 
+    gap: 25px;
+}
+
+nav a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #E8C7A8;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    color: #713D46;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* PRESENTACION */
+
+#presentacion {
+    text-align: center;
+    background-color: #EFE5D7;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+
+/* RESEÑAS */
+
+#reseñas article {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#reseñas article h3 {
+    color: #713D46;
+    font-size: 24px;
+}
+
+#reseñas article img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 6px;
+}
+
+
+/* FORMULARIO */
+
+form {
+    max-width: 550px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #C9B9AB;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus, textarea:focus  {
+    outline: 2px solid #879780;
+}
+
+button {
+    background-color: #716540;
+    color: #FFFFFF;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #402C35;
+}
+
+
+/* PIE DE PAGINA */
+
+
+footer {
+    background-color: #352D2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* AJUSTES PARA PANTALLAS PEQUEÑAS */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+}
